@@ -1,21 +1,45 @@
 # Dependencies
 node_modules/
+client/node_modules/
+server/node_modules/
 
-# Environment and secrets
+# Environment and secrets — commit only the placeholder example files.
 .env
 .env.*
 !.env.example
+!client/.env.example
+!server/.env.example
 *.pem
 *.key
+*.crt
+*.pfx
+*.p12
 
-# Build and test output
+# Frontend and backend build output
 dist/
-coverage/
+client/dist/
+server/dist/
 *.tsbuildinfo
-
-# Tooling and OS files
 .vite/
-.eslintcache
+client/.vite/
+
+# Runtime files and test output
+uploads/
+server/uploads/
+coverage/
+client/coverage/
+server/coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Logs, caches, and operating-system files
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.cache/
 .DS_Store
 Thumbs.db

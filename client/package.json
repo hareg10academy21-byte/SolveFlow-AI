@@ -16,7 +16,7 @@
     "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "solveflow-ai": "file:..",
+    "react-router-dom": "^7.6.2",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {
@@ -36,5 +36,8 @@
     "typescript-eslint": "^8.34.0",
     "vite": "^6.3.5",
     "vitest": "^3.2.2"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
